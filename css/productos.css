@@ -1,0 +1,161 @@
+/* Estilos Generales */
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color: #DC3545;
+    padding: 10px;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+}
+
+.logo-navbar {
+    height: 50px;
+}
+
+/* Fondo negro en el main */
+.main-container {
+    background-color: black;
+    color: white;
+}
+
+/* Estilos de Productos */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* Reduce la separación entre tarjetas */
+    padding: 20px;
+    justify-content: center;
+}
+
+.product {
+    background-color: #222; /* Fondo oscuro para resaltar */
+    color: white;
+    border-radius: 12px; /* Esquinas redondeadas */
+    overflow: hidden; /* Evita que los elementos sobresalgan */
+    width: 280px; /* Tamaño fijo para consistencia */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left; /* Alineación de texto a la izquierda */
+}
+
+.product img {
+    width: 100%; /* Ancho completo de la tarjeta */
+    height: 300px; /* Altura fija */
+    object-fit: cover; /* Recorta la imagen para ajustarse al espacio */
+}
+
+.product h5 {
+    font-size: 1.1rem;
+    color: #DC3545; /* Color destacado */
+    margin: 15px 0 10px 15px; /* Espaciado */
+}
+
+.product h6 {
+    font-size: 0.9rem;
+    color: #cccccc; /* Color gris claro */
+    margin: 0 15px 10px 15px; /* Espaciado interno */
+    line-height: 1.4; /* Mejora la legibilidad */
+}
+
+.product p {
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0 15px 15px 15px; /* Espaciado */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* Aumenta la sombra */
+}
+
+
+
+
+/* Botón flotante de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Footer */
+.footer-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.footer-custom {
+    background-color: #DC3545;
+    color: white;
+}
+
+.footer-custom ul {
+    padding-left: 0;
+}
+
+.footer-custom ul li {
+    list-style: none;
+}
+
+.custom-footer-link {
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-footer-link-2 {
+    padding: 0;
+    margin: 0;
+}
+
+.custom-footer-link:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer-custom .col-md-4 {
+        display: none;
+    }
+    .footer-custom .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .product {
+        width: 100%; /* Ajuste para una sola columna en pantallas pequeñas */
+    }
+}

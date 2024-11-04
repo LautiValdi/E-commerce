@@ -1,0 +1,205 @@
+/* Estilos Generales */
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color: #DC3545;
+    padding: 10px;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+}
+
+.logo-navbar {
+    height: 50px;
+}
+
+/* Main Container */
+.main-container {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+/* Formulario de Producto */
+#product-form {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+}
+
+#product-form label {
+    color: #DC3545;
+    font-weight: bold;
+}
+
+#product-form input[type="text"],
+#product-form input[type="number"] {
+    background-color: #333;
+    border: 1px solid #555;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#submit-button {
+    background-color: #DC3545;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit-button:hover {
+    background-color: #b02a37;
+}
+
+/* Tabla de Productos */
+.product-table {
+    width: 100%;
+    background-color: #333;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.product-table th,
+.product-table td {
+    border: 1px solid #555;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.product-table th {
+    background-color: #DC3545;
+    font-weight: bold;
+}
+
+.product-table td img {
+    width: 50px;
+    height: auto;
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Footer */
+.footer-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.footer-custom {
+    background-color: #DC3545;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-custom ul {
+    padding-left: 0;
+}
+
+.footer-custom ul li {
+    list-style: none;
+}
+
+.custom-footer-link {
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-footer-link-2 {
+    padding: 0;
+    margin: 0;
+}
+
+.custom-footer-link:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer-custom .col-md-4 {
+        display: none;
+    }
+
+    .footer-custom .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    table.product-table {
+        display: table;
+    }
+
+    table.product-table thead {
+        display: table-header-group; /* Muestra el encabezado de la tabla en pantallas grandes */
+    }
+
+    table.product-table tr {
+        display: table-row;
+    }
+
+    table.product-table td {
+        display: table-cell;
+        text-align: left;
+        padding: 0.5rem;
+        position: static;
+        font-size: 16px;
+    }
+
+    table.product-table td::before {
+        content: none; /* Remueve los encabezados en cada celda */
+    }
+
+    table.product-table td img {
+        width: 50px;
+        height: 50px;
+    }
+}

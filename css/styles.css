@@ -1,0 +1,228 @@
+/* Estilos Generales */
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color: #DC3545;
+    padding: 10px;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+}
+
+.logo-navbar {
+    height: 50px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('/assets/fondo hero.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0; /* Ajustar padding para móviles */
+}
+
+.hero-section h1, .hero-section p {
+    background-color: black;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.hero-section h1 {
+    font-size: 2rem; /* Tamaño más pequeño para móviles */
+    font-weight: bold;
+    color: #DC3545;
+    max-width: 90%; /* Asegura que no se salga del contenedor */
+}
+
+.hero-section p {
+    font-size: 1.25rem; /* Tamaño más pequeño para móviles */
+    color: #DC3545;
+    
+}
+
+/* Botones Personalizados */
+.custom-btn {
+    font-size: 1.25rem;
+    padding: 15px; /* Tamaño más pequeño para móviles */
+    border-radius: 8px;
+    background-color: #DC3545;
+    color: white;
+    display: block; /* Asegura que ocupen todo el ancho */
+    margin: 10px 0; /* Espaciado entre botones */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Fondo negro en el main */
+main {
+    background-color: black;
+    color: white;
+}
+
+/* Secciones dentro del main */
+section {
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+}
+
+/* Estilos de Productos */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* Reduce la separación entre tarjetas */
+    padding: 20px;
+    justify-content: center;
+}
+
+.product {
+    background-color: #222; /* Fondo oscuro para resaltar */
+    color: white;
+    border-radius: 12px; /* Esquinas redondeadas */
+    overflow: hidden; /* Evita que los elementos sobresalgan */
+    width: 280px; /* Tamaño fijo para consistencia */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left; /* Alineación de texto a la izquierda */
+}
+
+.product img {
+    width: 100%; /* Ancho completo de la tarjeta */
+    height: 300px; /* Altura fija */
+    object-fit: cover; /* Recorta la imagen para ajustarse al espacio */
+}
+
+.product h5 {
+    font-size: 1.1rem;
+    color: #DC3545; /* Color destacado */
+    margin: 15px 0 10px 15px; /* Espaciado */
+}
+
+.product p {
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0 15px 15px 15px; /* Espaciado */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* Aumenta la sombra */
+}
+
+
+/* Botón flotante de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Footer */
+
+.footer-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.footer-custom {
+    background-color: #DC3545;
+    color: white;
+}
+
+.footer-custom ul {
+    padding-left: 0;
+}
+
+.footer-custom ul li {
+    list-style: none;
+}
+
+.custom-footer-link {
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-footer-link-2 {
+    padding: 0;
+    margin: 0;
+}
+
+.custom-footer-link:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .faq-section h2 {
+        font-size: 28px;
+    }
+
+    .faq-item h3 {
+        font-size: 20px;
+    }
+
+    .faq-item p {
+        font-size: 14px;
+    }
+
+    .footer-custom h6 {
+        font-size: 16px;
+    }
+
+    .footer-custom .col-md-4 {
+        display: none; /* Oculta las columnas en móvil */
+    }
+
+    .footer-custom .social-icons {
+        display: flex; /* Muestra solo los iconos de redes sociales */
+        justify-content: center;
+    }
+
+    /* Ajustes para los botones */
+    .productos-destacados .row {
+        display: flex;
+        flex-direction: column; /* Apila botones en vertical */
+    }
+
+    .hero-section h1, .hero-section p {
+        background-color: black;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+

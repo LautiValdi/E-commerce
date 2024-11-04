@@ -1,0 +1,176 @@
+
+/* Estilos Generales */
+body {
+    font-family: sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color: #DC3545;
+    padding: 10px;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+}
+
+.logo-navbar {
+    height: 50px;
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilos del Titulo */
+.tittle-text{
+    color: white;
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 30px;
+}
+
+/* Estilos del Formulario */
+form {
+    background-color: #DC3545; /* Fondo rojo similar al de la imagen */
+    padding: 30px;
+    border-radius: 25px; /* Bordes redondeados */
+   
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white; /* Texto en blanco */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+form label {
+    font-size: 16px;
+    color: white;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white; /* Fondo blanco en los inputs */
+    color: black;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    background-color: #6c63ff; /* Botón morado */
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #5a54e8; /* Cambio de color al pasar el mouse */
+}
+
+form a {
+    color: white;
+    text-align: right;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+form p {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Centrar el formulario en la página */
+main {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    background-color: black;
+}
+
+
+/* Footer */
+
+.footer-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.footer-custom {
+    background-color: #DC3545;
+    color: white;
+}
+
+.footer-custom ul {
+    padding-left: 0;
+}
+
+.footer-custom ul li {
+    list-style: none;
+}
+
+.custom-footer-link {
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-footer-link-2 {
+    padding: 0;
+    margin: 0;
+}
+
+.custom-footer-link:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer-custom .col-md-4 {
+        display: none;
+    }
+    .footer-custom .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+}

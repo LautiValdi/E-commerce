@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carga de Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/cargadeproductos.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <img class="logo-navbar" src="/assets/OLogo.png" alt="Logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="/pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="/pages/login.html">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor Principal -->
+    <main class="main-container">
+        <form id="product-form">
+            <label for="numero-ID">Número de ID</label>
+            <input type="number" id="numero-ID" required>
+            <label for="nombre-producto">Nombre del producto</label>
+            <input type="text" id="nombre-producto" required>
+            <label for="descripcion-producto">Descripción del producto</label>
+            <input type="text" id="descripcion-producto" required>
+            <label for="precio-producto">Precio del Producto</label>
+            <input type="number" id="precio-producto" step="0.01" required> <!-- Campo de precio agregado -->
+            <label for="imagen-producto">Imagen del Producto</label>
+            <input type="file" id="imagen-producto" required>
+            <label for="stock-producto">Stock del producto</label>
+            <input type="number" id="stock-producto" required>
+            <label for="categoria-producto">Categoría del producto</label>
+            <input type="text" id="categoria-producto" required>
+            <input type="submit" value="Añadir" id="submit-button"> <!-- Botón para agregar producto -->
+        </form>
+        
+
+        <!-- Tabla de Productos -->
+        <table class="product-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Producto</th>
+                    <th>Descripción</th>
+                    <th>Imagen</th>
+                    <th>Precio</th> <!-- Nueva columna para el precio -->
+                    <th>Stock</th>
+                    <th>Categoría</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="product-table-body">
+                <!-- Los productos se agregarán aquí dinámicamente -->
+            </tbody>
+        </table>
+        
+    </main>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+        <img src="/assets/logo wsp.png" alt="WhatsApp">
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer-custom text-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-content">
+                    <h6 class="footer-title">Atención al cliente</h6>
+                    <ul class="list-unstyled">
+                        <li><p class="custom-footer-link-2">Número de teléfono: 1234567890</p></li>
+                        <li><p class="custom-footer-link-2">Horario de atención: 9:00 a 21:00</p></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-content">
+                    <h6 class="footer-title">Tienda Online</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/pages/FAQ.html" class="custom-footer-link">Preguntas frecuentes</a></li>
+                        <li><a href="/pages/404.html" class="custom-footer-link">Medios de pago</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-content">
+                    <h6 class="footer-title">Legal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/pages/politicayterminos.html#Politica de Privacidad" class="custom-footer-link">Política de privacidad</a></li>
+                        <li><a href="/pages/politicayterminos.html#Términos de Uso" class="custom-footer-link">Términos de uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/accounts/login/"><img src="/assets/Instagram_logo_2016.svg.webp" alt="Instagram"></a>
+                <a href="https://www.facebook.com/login/?locale=es_LA"><img src="/assets/Facebook_Logo_(2019).png" alt="Facebook"></a>
+                <a href="https://www.tiktok.com/login"><img src="/assets/tiktok-icon-free-png.png" alt="TikTok"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/cargadeproductos.js"></script>
+</body>
+</html>
