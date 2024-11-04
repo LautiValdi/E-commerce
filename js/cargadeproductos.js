@@ -84,7 +84,8 @@ function renderizarTabla() {
     const tableBody = document.getElementById('product-table-body');
     tableBody.innerHTML = '';
 
-    productos.forEach((producto) => {
+    for (let i = 0; i < productos.length; i++) {
+        const producto = productos[i];
         const row = document.createElement('tr');
 
         row.innerHTML = `
@@ -98,12 +99,13 @@ function renderizarTabla() {
             <td><button class="btn btn-danger btn-sm eliminar-producto" data-id="${producto.id}">Eliminar</button></td>
         `;
         tableBody.appendChild(row);
-    });
+    }
 
     // Agregar evento a los botones de eliminar
-    document.querySelectorAll('.eliminar-producto').forEach((button) => {
-        button.addEventListener('click', eliminarProducto);
-    });
+    const eliminarBtns = document.getElementsByClassName('eliminar-producto');
+    for (let j = 0; j < eliminarBtns.length; j++) {
+        eliminarBtns[j].addEventListener('click', eliminarProducto);
+    }
 }
 
 // Convertir imagen a base64 y agregar producto
@@ -136,7 +138,15 @@ document.getElementById('product-form').addEventListener('submit', function(e) {
 // Eliminar producto
 function eliminarProducto(e) {
     const id = parseInt(e.target.getAttribute('data-id'), 10);
-    productos = productos.filter(producto => producto.id !== id);
+
+    const nuevosProductos = [];
+    for (let k = 0; k < productos.length; k++) {
+        if (productos[k].id !== id) {
+            nuevosProductos.push(productos[k]);
+        }
+    }
+    productos = nuevosProductos;
+
     guardarProductos(); // Guarda en localStorage
     renderizarTabla(); // Actualiza la tabla
 }

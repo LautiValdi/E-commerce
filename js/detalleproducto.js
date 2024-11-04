@@ -78,9 +78,16 @@ let productos = JSON.parse(localStorage.getItem("productos")) || [
 function cargarProducto() {
     const urlParams = new URLSearchParams(window.location.search);
     const productId = parseInt(urlParams.get("id"));
+    
+    let producto = null;
 
-    // Buscar el producto en el array
-    const producto = productos.find((p) => p.id === productId);
+    // Bucle for para buscar el producto en el array
+    for (let i = 0; i < productos.length; i++) {
+        if (productos[i].id === productId) {
+            producto = productos[i];
+            break;
+        }
+    }
 
     // Rellenar los datos del producto en la página si existe
     if (producto) {
