@@ -1,3 +1,19 @@
+
+
+Correciones realizadas:
+
+Las tajetas no tienen mas el link subrayado
+
+El boton comprar lleva a whatsapp
+
+La barra de opciones (new in, sales, etc) es sticky, para que te acompañe al scrollear
+
+El el login los datos que tiene que cargar tiene el input con el atributo required
+
+
+
+
+
 Modificaciones de los estilos de la pagina principal:
 Tuve que agregar un hero section porque es solicitado en el proyecto y no lo tenia en el mockup.
 Quite algunas cosas del nav no solitadas y le agregue un logo porque no lo tenia en el mockup y se necesitaba. Ademas agregue la forma de moverme de pagina a pagina.

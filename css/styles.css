@@ -78,6 +78,17 @@ section {
     padding: 40px 0;
 }
 
+/* Barra Sticky para Navegación Interna */
+.sticky-bar {
+    position: sticky;
+    top: 0; /* Mantén la barra en la parte superior */
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
+    background-color: black; /* Color de fondo igual al diseño */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para mayor visibilidad */
+    padding: 10px 0;
+}
+
+
 /* Estilos de Productos */
 .products {
     display: flex;
